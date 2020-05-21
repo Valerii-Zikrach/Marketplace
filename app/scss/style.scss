@@ -49,32 +49,37 @@
 		width: 35px;
 		height: 35px;
 		margin-left: 10px;
-		&:after{
+
+		&:after {
 			@extend %icon;
 			content: "\e950";
-			color:$gray;
+			color: $gray-dark;
 			font-size: 20px;
-			top:7px;
+			top: 7px;
 			left: 7px;
 			transition: .4s;
 		}
+
 		&:hover:after,
-		&:focus:after{
-			color:#000;
+		&:focus:after {
+			color: #000;
 		}
+
 		&:hover .user-cabinet__status-num,
-		&:focus .user-cabinet__status-num{
-			background-color:#000;
-			color:#fff;
+		&:focus .user-cabinet__status-num {
+			background-color: #000;
+			color: #fff;
 		}
-		
-		&--alarm:after{
+
+		&--alarm:after {
 			content: "\e950";
 		}
-		&--envelope:after{
+
+		&--envelope:after {
 			content: "\f003";
 		}
-		&--cart:after{
+
+		&--cart:after {
 			content: "\e93a";
 		}
 	}
@@ -113,12 +118,12 @@
 		font-size: 0;
 		@extend %back-image;
 		margin: 0px 22px 0px 30px;
-		transition:all 1s;
-		opacity:1;
+		transition: all 1s;
+		opacity: 1;
 
 		&:hover,
 		&:focus {
-			opacity:.5;
+			opacity: .5;
 		}
 	}
 
@@ -132,10 +137,11 @@
 		color: $text-secondary;
 		line-height: 22px;
 		margin-bottom: 5px;
-		transition:all .3s;
+		transition: all .3s;
+
 		&:hover,
 		&:focus {
-			color:$red;
+			color: $red;
 		}
 	}
 
@@ -242,3 +248,161 @@
 }
 
 /* Header End */
+/* Tagline Start */
+.tagline {
+	min-height: 726px;
+	background-color: #441c7c;
+	background-image: linear-gradient(to left, #0030de 0%, #2e5afb 100%);
+	opacity: 0.8;
+	position: relative;
+
+	&__inner {
+		text-align: center;
+		color: #f3f3f8;
+	}
+
+	&__title {
+		text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+		color: #f3f3f8;
+		font-size: 60px;
+		line-height: 70px;
+		@extend %f700;
+		padding-top: 185px;
+		margin: 0 auto;
+
+		p {
+			@extend %f400;
+		}
+	}
+
+	&__subtitle {
+		@extend %f500;
+		font-size: 20px;
+		line-height: 72px;
+		margin-bottom: 68px;
+	}
+
+	&__link {
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		border-radius: 28px;
+		border: 1px solid #ffffff;
+		padding: 20px 30px;
+		color: #ffffff;
+		line-height: 72px;
+		margin: 15px;
+		transition: all .5s;
+
+		&--active {
+			background-color: #ffffff;
+			color: $blue;
+
+			&:hover,
+			&:focus {
+				background-color: transparent;
+				color: #ffffff;
+			}
+		}
+
+		&--disable {
+
+			&:hover,
+			&:focus {
+				background-color: #ffffff;
+				color: $blue;
+			}
+		}
+	}
+}
+
+.search-products {
+	position: absolute;
+	width: 1140px;
+	height: 135px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+	border-radius: 6px;
+	background-color: #ffffff;
+
+	&__input {
+		border-radius: 4px 0 0 4px;
+		border: 1px solid $gray-light;
+		display: block;
+		width: 612px;
+		height: 55px;
+		margin: 40px 0 40px 40px;
+		outline: transparent;
+		padding: 0 220px 0 30px;
+
+		&:hover,
+		&:focus {
+			border: 2px solid $gray-light;
+		}
+
+		&::placeholder {
+			color: $gray-second;
+		}
+	}
+
+	&__select {
+		position: absolute;
+		width: 194px;
+		height: 55px;
+		top: 40px;
+		right: 294px;
+		appearance: none;
+		color: $text-accent;
+		outline: transparent;
+		border: 1px solid $gray-light;
+		border-radius: 0 4px 4px 0;
+		border-left: none;
+		padding: 0 20px 0 20px;
+
+		&:after {
+			content: "\f107";
+			@extend %icon;
+			font-size: 200px;
+			color: $gray-dark;
+			top: 0;
+			left: 0;
+			z-index: 200;
+			pointer-events: none;
+		}
+
+		&:hover,
+		&:focus {
+			border: 2px solid $gray-light;
+		}
+	}
+
+	&__btn {
+		position: absolute;
+		top: 40px;
+		right: 40px;
+		color: #ffffff;
+		border: none;
+		padding: 6px 68px;
+		line-height: 42px;
+		border-radius: 4px;
+		height: 55px;
+		background-color: #0674ec;
+		cursor: pointer;
+		transition: .5s;
+
+		&:hover,
+		&:focus {
+			background-color: $blue-hover;
+		}
+	}
+}
+.search-products__select:after{
+	content: "\f107";
+			@extend %icon;
+			font-size: 200px;
+			color: $gray-dark;
+			top: 0;
+			left: 0;
+			z-index: 200;
+			pointer-events: none;
+}
+
+
+/* Tagline End */
