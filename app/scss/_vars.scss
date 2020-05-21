@@ -1,0 +1,39 @@
+$blue: #0674ec;
+$blue-hover:#0675ec85;
+$violet: #7f4ec2;
+$gray: #7e8fa1;
+$green: #62d03b;
+$red: #ff6a6c;;
+$text-accent:#555555;
+$text-secondary:#333333;
+
+%f300{
+	font-family: 'Quicksand';
+	font-weight: 300;
+}
+%f400{
+	font-family: 'Quicksand';
+	font-weight: 400;
+}
+%f500{
+	font-family: 'Quicksand';
+	font-weight: 500;
+}
+%f700{
+	font-family: 'Quicksand';
+	font-weight: 700;
+}
+%icon{
+	font-family: 'icomoon';
+	position: absolute;
+}
+%flex-space-between{
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+}
+%back-image{
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size: cover;
+}
