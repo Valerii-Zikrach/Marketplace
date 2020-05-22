@@ -228,7 +228,6 @@
 		background-position: center;
 		top: 0;
 		right: 0;
-		cursor: pointer;
 		transition: .5s ease;
 
 		&:hover,
@@ -420,7 +419,6 @@
 		border-radius: 4px;
 		height: 55px;
 		background-color: #0674ec;
-		cursor: pointer;
 		transition: .5s;
 
 		&:hover,
@@ -444,6 +442,7 @@
 	&__item {
 		text-align: center;
 		padding: 0 35px;
+		transition: all 1s;
 
 		&:hover,
 		&:focus {
@@ -481,10 +480,6 @@
 	padding: 120px 0px;
 	background-color: #eff1f5;
 
-	&__inner-top {
-		position: relative;
-	}
-
 	&__title {
 		box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
 		border-radius: 4px;
@@ -495,8 +490,9 @@
 		padding: 41px 0px 40px 29px;
 		margin-bottom: 50px;
 		position: relative;
+
 		&:after {
-			content:"";
+			content: "";
 			width: 110px;
 			height: 45px;
 			border-radius: 23px;
@@ -509,9 +505,6 @@
 
 	&__item {
 		display: flex !important;
-		box-shadow: 0 2px 30px rgba(147, 155, 168, 0.1);
-		border-radius: 4px;
-		background-color: #ffffff;
 	}
 
 	&__image {
@@ -727,11 +720,12 @@
 		}
 	}
 }
+
 .slick-arrow.slick-prev,
-.slick-arrow.slick-next{
+.slick-arrow.slick-next {
 	padding: 0;
-	border:none;
-	background-color:transparent;
+	border: none;
+	background-color: transparent;
 	font-size: 0;
 	position: absolute;
 	outline: none;
@@ -741,8 +735,9 @@
 	transform: translateY(-50%);
 	transition: .5s;
 }
+
 .slick-prev:after,
-.slick-next:after{
+.slick-next:after {
 	content: "\f107";
 	@extend %icon;
 	font-size: 30px;
@@ -750,6 +745,7 @@
 	top: 0;
 	left: 0;
 }
+
 .slick-arrow.slick-next {
 	right: 70px;
 	transform: rotate(-90deg);
@@ -760,6 +756,7 @@
 	top: -114px;
 	transform: rotate(90deg);
 }
+
 .slick-arrow.slick-prev:hover,
 .slick-arrow.slick-prev:focus {
 	transform: scale(1.2) rotate(90deg) translate(-2px, 5px);
@@ -773,5 +770,294 @@
 /* Featured products End */
 /* Release products Start */
 
+.release-products {
+	padding: 120px 0px;
+	background-color: #f6f7fb;
+
+
+	&__head {
+		@extend %flex-space-between;
+		box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+		border-radius: 4px;
+		background-color: #ffffff;
+		height: 110px;
+		margin-bottom: 30px;
+	}
+
+	&__head-title {
+		color: #000000;
+		font-size: 30px;
+		line-height: 28px;
+		padding-left: 31px;
+	}
+
+	&__head-filter {
+		color: #747b86;
+		line-height: 32px;
+		position: relative;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+
+		.icon-dots-three-vertical {
+			margin: 0;
+			padding: 0px 30px 0px 25px;
+			background-color: transparent;
+			border: none;
+			color: #a3b1c4;
+			font-size: 20px;
+			outline: transparent;
+		}
+	}
+}
+
+.head-filter {
+	&__list {
+		position: absolute;
+		left: -60px;
+		top: 50px;
+		box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
+		border-radius: 3px;
+		width: 183px;
+		height: 179px;
+		opacity: 0;
+		padding: 20px;
+		visibility: hidden;
+		background-color: #ffffff;
+		transform: translateY(-50px);
+		transition: all .5s;
+
+		&--active {
+			opacity: 1;
+			visibility: visible;
+			transform: translateY(0);
+		}
+	}
+
+	&__item {
+		color: #747b86;
+		font-size: 15px;
+		line-height: 28px;
+		background-color: transparent;
+		border: none;
+		display: block;
+		outline: transparent;
+		margin: 0;
+		padding: 0;
+
+		&:hover,
+		&:focus {
+			color: #0674ec;
+		}
+	}
+}
+
+.release-products__controls {
+	height: 92px;
+	box-shadow: 0 1px 2px rgba(90, 93, 100, 0.1);
+	border-radius: 4px;
+	background-color: #ffffff;
+	@extend %flex-space-between;
+	padding: 0px 113px 0px 30px;
+	margin-bottom: 50px;
+
+	&-btn {
+		border: none;
+		color: #747b86;
+		font-size: 15px;
+		line-height: 30px;
+		margin: 0;
+		padding: 5px 20px;
+		border-radius: 16px;
+		background-color: #f1f3f6;
+		transition: all .5s;
+
+		&:hover,
+		&:focus {
+			color: #fff;
+			background-color: $blue;
+		}
+	}
+}
+
+.release-products__controls-btn.mixitup-control-active {
+	color: #fff;
+	background-color: $blue;
+	outline: transparent;
+}
+.head-filter__item.mixitup-control-active {
+	color: $blue;
+	outline: transparent;
+}
+
+
+.release-products {
+	&__inner {
+		margin-bottom: 30px;
+		@extend %flex-space-between;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		max-width: 361px;
+		margin-bottom: 30px;
+	}
+
+	&__image {
+		display: block;
+		font-size: 0;
+		width: 100%;
+		min-height: 230px;
+		position: relative;
+		@extend %back-image;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.hover-links {
+			&:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				border-radius: 4px 4px 0 0;
+				background-color: #009688;
+				background-image: linear-gradient(to left, #0674ec 0%, #7347c1 100%);
+				z-index: 1;
+				opacity: 0;
+				transition: all 1s;
+			}
+
+			.hover__link {
+				box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+				border-radius: 23px;
+				background-color: #ffffff;
+				color: #0674ec;
+				font-size: 15px;
+				@extend %f500;
+				padding: 13px 28px;
+				position: relative;
+				z-index: 10;
+				margin: 0px 5px;
+				border: 1px solid transparent;
+				transition: all 1s;
+				opacity: 0;
+				visibility: hidden;
+
+				&:hover {
+					color: #fff;
+					background-color: transparent;
+					border: 1px solid #fff;
+				}
+			}
+		}
+	}
+}
+
+.release-products__item {
+	&:hover .hover-links:after {
+		opacity: .9;
+	}
+
+	&:hover .hover__link {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+.release-products__inner .item-description {
+
+
+	&__title {
+		margin-top: 30px;
+		font-size: 20px;
+		padding: 0px 30px;
+	}
+
+	&__info--top {
+		margin-bottom: 25px;
+		padding: 0px 30px;
+	}
+
+	&__author-img {
+		width: 28px;
+		height: 28px;
+	}
+
+	&__text {
+		line-height: 30px;
+		margin-bottom: 25px;
+		padding: 0px 30px;
+	}
+
+	&__info--bottom {
+		height: 61px;
+		padding: 0;
+	}
+
+	&__info--bottom-right {
+		display: flex;
+		align-items: center;
+	}
+
+	&__price {
+		margin: 0px 30px;
+		padding: 0;
+		display: block;
+		color: $blue;
+		background-color: #fff;
+		border: none;
+
+		&:hover,
+		&:focus {
+			color: rgb(102, 38, 38);
+			border: none;
+		}
+	}
+
+	&__likes {
+		padding-left: 24px;
+		display: block;
+		margin: 0 15px 0 0;
+
+		&:before {
+			top: -1px;
+		}
+	}
+
+	&__rate {
+		display: inline-block;
+		padding: 0;
+	}
+
+	&__purchases {
+		margin-right: 30px;
+	}
+}
+
+.all-products__link {
+	text-align: center;
+
+	a {
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		border-radius: 28px;
+		background-color: #0674ec;
+		color: #ffffff;
+		line-height: 72px;
+		padding: 18px 33px;
+		transition: all 1s;
+		border: 1px solid transparent;
+
+		&:hover,
+		&:focus {
+			color: $blue;
+			background-color: transparent;
+			border: 1px solid $blue;
+		}
+
+	}
+}
 
 /* Release products End */

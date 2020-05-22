@@ -62,6 +62,9 @@
 	-moz-osx-font-smoothing: grayscale;
  }
  
+ .icon-dots-three-vertical:before {
+	content: "\e901";
+ }
  .icon-document-file-psd:before {
 	content: "\e900";
  }
