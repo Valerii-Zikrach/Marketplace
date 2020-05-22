@@ -494,16 +494,17 @@
 		line-height: 28px;
 		padding: 41px 0px 40px 29px;
 		margin-bottom: 50px;
-	}
-
-	&__slider-nav {
-		width: 110px;
-		height: 45px;
-		border-radius: 23px;
-		background-color: #7347c1;
-		position: absolute;
-		top: 33px;
-		right: 30px;
+		position: relative;
+		&:after {
+			content:"";
+			width: 110px;
+			height: 45px;
+			border-radius: 23px;
+			background-color: #7347c1;
+			position: absolute;
+			top: 33px;
+			right: 30px;
+		}
 	}
 
 	&__item {
@@ -726,47 +727,51 @@
 		}
 	}
 }
-
-button.slick-arrow {
-	border: none;
-	outline: none;
-	background-color: transparent;
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next{
+	padding: 0;
+	border:none;
+	background-color:transparent;
+	font-size: 0;
 	position: absolute;
+	outline: none;
 	z-index: 5;
 	top: -95px;
-	font-size: 0;
-	line-height: 0;
 	cursor: pointer;
 	transform: translateY(-50%);
 	transition: .5s;
-
-	&:after {
-		content: "\f107";
-		@extend %icon;
-		font-size: 30px;
-		color: #fff;
-	}
 }
-
-button.slick-next {
-	right: 50px;
+.slick-prev:after,
+.slick-next:after{
+	content: "\f107";
+	@extend %icon;
+	font-size: 30px;
+	color: #fff;
+	top: 0;
+	left: 0;
+}
+.slick-arrow.slick-next {
+	right: 70px;
 	transform: rotate(-90deg);
 }
 
-button.slick-prev {
-	right: 110px;
+.slick-arrow.slick-prev {
+	right: 100px;
 	top: -114px;
 	transform: rotate(90deg);
 }
-
-button.slick-prev:hover,
-button.slick-prev:focus {
+.slick-arrow.slick-prev:hover,
+.slick-arrow.slick-prev:focus {
 	transform: scale(1.2) rotate(90deg) translate(-2px, 5px);
 }
 
-button.slick-next:hover,
-button.slick-next:focus {
+.slick-arrow.slick-next:hover,
+.slick-arrow.slick-next:focus {
 	transform: scale(1.2) rotate(-90deg) translate(-2px, 5px);
 }
 
 /* Featured products End */
+/* Release products Start */
+
+
+/* Release products End */
