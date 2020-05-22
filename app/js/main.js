@@ -13,6 +13,13 @@ $(function () {
 		slidesToScroll: 1
 	});
 
+	$('.followers-feed__inner').slick({
+		dots: false,
+		arrows: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+	});
+
 
 	const menuBtn = $('.icon-dots-three-vertical, .head-filter__text'),
 		menu = $('.head-filter__list');

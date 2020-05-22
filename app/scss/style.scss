@@ -475,33 +475,32 @@
 
 /* Advantages End */
 /* Featured products Start */
+.head-title {
+	box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+	border-radius: 4px;
+	background-color: #ffffff;
+	color: #000000;
+	font-size: 30px;
+	line-height: 28px;
+	padding: 41px 0px 40px 29px;
+	margin-bottom: 50px;
+	position: relative;
+
+	&:after {
+		content: "";
+		width: 110px;
+		height: 45px;
+		border-radius: 23px;
+		background-color: #7347c1;
+		position: absolute;
+		top: 33px;
+		right: 30px;
+	}
+}
 
 .featured-products {
 	padding: 120px 0px;
 	background-color: #eff1f5;
-
-	&__title {
-		box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
-		border-radius: 4px;
-		background-color: #ffffff;
-		color: #000000;
-		font-size: 30px;
-		line-height: 28px;
-		padding: 41px 0px 40px 29px;
-		margin-bottom: 50px;
-		position: relative;
-
-		&:after {
-			content: "";
-			width: 110px;
-			height: 45px;
-			border-radius: 23px;
-			background-color: #7347c1;
-			position: absolute;
-			top: 33px;
-			right: 30px;
-		}
-	}
 
 	&__item {
 		display: flex !important;
@@ -770,6 +769,13 @@
 /* Featured products End */
 /* Release products Start */
 
+.product-item,
+.product-item--big {
+	box-shadow: 0 2px 30px rgba(147, 155, 168, 0.1);
+	border-radius: 4px;
+	background-color: #ffffff;
+}
+
 .release-products {
 	padding: 120px 0px;
 	background-color: #f6f7fb;
@@ -831,6 +837,7 @@
 			opacity: 1;
 			visibility: visible;
 			transform: translateY(0);
+			transition: all .5s;
 		}
 	}
 
@@ -885,25 +892,26 @@
 	background-color: $blue;
 	outline: transparent;
 }
+
 .head-filter__item.mixitup-control-active {
 	color: $blue;
 	outline: transparent;
 }
 
 
-.release-products {
-	&__inner {
+.product {
+	&-inner {
 		margin-bottom: 30px;
 		@extend %flex-space-between;
 		flex-wrap: wrap;
 	}
 
-	&__item {
+	&-item {
 		max-width: 361px;
 		margin-bottom: 30px;
 	}
 
-	&__image {
+	&-image {
 		display: block;
 		font-size: 0;
 		width: 100%;
@@ -956,7 +964,7 @@
 	}
 }
 
-.release-products__item {
+.product-item {
 	&:hover .hover-links:after {
 		opacity: .9;
 	}
@@ -967,8 +975,7 @@
 	}
 }
 
-.release-products__inner .item-description {
-
+.product-inner .item-description {
 
 	&__title {
 		margin-top: 30px;
@@ -1061,6 +1068,19 @@
 }
 
 /* Release products End */
-/* Start */
+/* Followers feed Start */
+.followers-feed__title.head-title:after {
+	background-color: $blue;
+}
 
-/* End */
+.followers-feed {
+	padding: 120px 0px 90px;
+	background-color: #eff1f5;
+
+	.product-inner {
+		margin-bottom: 0;
+	}
+}
+
+
+/* Followers feed End */
