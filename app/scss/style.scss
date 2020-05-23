@@ -1082,5 +1082,64 @@
 	}
 }
 
+.followers-feed .slick-list {
+	margin: 0 -13px;
+}
+
+.followers-feed .slick-track {
+	margin: 0 13px;
+}
+
 
 /* Followers feed End */
+/* Liberties Start */
+.liberties {
+	background-color: #0d0f13;
+	opacity: 0.8;
+
+	&__inner {
+		height: 350px;
+		@extend %flex-space-between;
+	}
+}
+
+.liberties-item {
+	text-align: center;
+
+	&__icon {
+		font-size: 48px;
+		margin-bottom: 30px;
+	}
+
+	&__num {
+		font-size: 36px;
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		color: #ffffff;
+		font-size: 18px;
+	}
+
+	.liberties-item__num--yellow,
+	.icon-briefcase {
+		color: #feb71d;
+	}
+
+	.liberties-item__num--blue,
+	.icon-cloud-download {
+		color: #58c9e9;
+	}
+
+	.liberties-item__num--green,
+	.icon-smile {
+		color: #77de51;
+	}
+
+	.liberties-item__num--red,
+	.icon-users {
+		color: #ff6a6d;
+	}
+}
+
+/* Liberties End */
