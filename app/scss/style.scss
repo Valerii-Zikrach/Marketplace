@@ -432,16 +432,34 @@
 
 /* Tagline End */
 /* Advantages Start */
-.advantages {
+.card-wrapper {
+	@extend %flex-space-between;
+}
 
+.card {
+	text-align: center;
+	padding: 0 35px;
+}
+
+.card-title {
+	color: #010101;
+	font-size: 24px;
+	line-height: 7.2px;
+	margin-bottom: 29px;
+}
+
+.card-text {
+	color: $text-accent;
+	line-height: 30px;
+	margin-bottom: 49px;
+}
+
+.advantages {
 	&__inner {
 		margin: 186px 0 121px;
-		@extend %flex-space-between;
 	}
 
 	&__item {
-		text-align: center;
-		padding: 0 35px;
 		transition: all 1s;
 
 		&:hover,
@@ -459,18 +477,7 @@
 		margin: 41px 0 29px;
 	}
 
-	&__item-title {
-		color: #010101;
-		font-size: 24px;
-		line-height: 7.2px;
-		margin-bottom: 29px;
-	}
 
-	&__item-text {
-		color: $text-accent;
-		line-height: 30px;
-		margin-bottom: 49px;
-	}
 }
 
 /* Advantages End */
@@ -833,6 +840,19 @@
 		transform: translateY(-50px);
 		transition: all .5s;
 
+		&:after {
+			content: "";
+			position: absolute;
+			top: -12px;
+			right: 16px;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 9px 16px 9px;
+			border-color: transparent transparent #ffffff transparent;
+			transition: all .5s;
+		}
+
 		&--active {
 			opacity: 1;
 			visibility: visible;
@@ -1123,23 +1143,101 @@
 
 	.liberties-item__num--yellow,
 	.icon-briefcase {
-		color: #feb71d;
+		color: $yellow;
 	}
 
 	.liberties-item__num--blue,
 	.icon-cloud-download {
-		color: #58c9e9;
+		color: $blue-light;
 	}
 
 	.liberties-item__num--green,
 	.icon-smile {
-		color: #77de51;
+		color: $green;
 	}
 
 	.liberties-item__num--red,
 	.icon-users {
-		color: #ff6a6d;
+		color: $red;
 	}
 }
 
 /* Liberties End */
+/* Features Start */
+.features {
+	text-align: center;
+	padding: 120px 0 90px;
+
+	&__title {
+		font-size: 36px;
+		color: #000;
+		margin-bottom: 35px;
+	}
+
+	&__title--blue {
+		color: $blue;
+	}
+
+	&__subtitle {
+		color: $text-accent;
+		max-width: 700px;
+		margin: 0 auto 60px;
+	}
+
+	&__inner {
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
+		border-radius: 4px;
+		max-width: 361px;
+		width: 100%;
+		margin-bottom: 30px;
+		padding: 0px 35px;
+		position: relative;
+
+		&--num {
+			position: absolute;
+			color: #e5eafe;
+			font-size: 48px;
+			@extend %f300;
+			top: 20px;
+			left: 20px;
+		}
+	}
+
+	&__item-icon {
+		font-size: 60px;
+		margin: 50px 0px 50px;
+	}
+}
+
+.features__item {
+
+	.icon-drivers-license-o {
+		color: $blue;
+	}
+
+	.icon-magic-wand {
+		color: $violet;
+	}
+
+	.icon-lock {
+		color: $green;
+	}
+
+	.icon-bar-chart {
+		color: $yellow;
+	}
+
+	.icon-leaf {
+		color: $blue-light;
+	}
+
+	.icon-mobile {
+		color: $red;
+	}
+}
+
+/* Features End */

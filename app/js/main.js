@@ -22,7 +22,7 @@ $(function () {
 
 
 	const menuBtn = $('.icon-dots-three-vertical, .head-filter__text'),
-		menu = $('.head-filter__list');
+	menu = $('.head-filter__list');
 	menuBtn.on('click', function () {
 		if ($('.head-filter__list').hasClass('head-filter__list--active')) {
 			$('.head-filter__list').removeClass('head-filter__list--active');
