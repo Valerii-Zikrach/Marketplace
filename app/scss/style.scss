@@ -1336,13 +1336,14 @@
 		height: 100%;
 		background-color: $blue;
 	}
+
 	&:after {
 		content: "\f0e5";
 		@extend %icon;
 		font-size: 60px;
 		color: #e8e8e8;
-		top:50px;
-		right:43px;
+		top: 50px;
+		right: 43px;
 	}
 
 	&__info {
@@ -1401,3 +1402,98 @@
 }
 
 /* Feedback End */
+/* News Start */
+
+.news {
+	background-color: #eff1f5;
+	text-align: center;
+	padding: 120px 0px 60px;
+
+	&__inner {
+		text-align: left;
+	}
+
+}
+
+.news .item-description {
+
+	&__date {
+		color: #999999;
+		width: 50%;
+		padding-left: 50px;
+		position: relative;
+		transition: .5s;
+
+		&:hover,
+		&:focus {
+			color: $blue;
+
+			&:before {
+				color: red;
+			}
+		}
+
+		&:before {
+			@extend %icon;
+			content: "\e950";
+			left: 30px;
+			color: $blue;
+			transition: .5s;
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			width: 1px;
+			height: 40px;
+			background-color: #ececec;
+			right: 0;
+			top: -10px;
+		}
+	}
+
+	&__comments,
+	&__views {
+		color: #7e7e7e;
+		transition: .5s;
+
+		&:hover,
+		&:focus {
+			color: $blue;
+
+			&:before {
+				color: $blue;
+			}
+		}
+	}
+
+	&__comments {
+		position: relative;
+		margin-right: 30px;
+		padding-left: 20px;
+
+		&:before {
+			@extend %icon;
+			left: 0;
+			content: "\f0e5";
+			transition: .5s;
+		}
+	}
+
+	&__views {
+		position: relative;
+		margin-right: 30px;
+		padding-left: 20px;
+
+		&:before {
+			@extend %icon;
+			left: 0;
+			content: "\f06e";
+			transition: .5s;
+		}
+	}
+}
+
+
+
+/* News End */
