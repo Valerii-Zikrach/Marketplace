@@ -1549,3 +1549,43 @@
 }
 
 /* Capability End */
+/* Join Start  */
+.join {
+	background-image: linear-gradient(to left, #0d3ef2 0%, #7221a0 100%);
+	opacity: 0.9;
+
+	&__inner {
+		text-align: center;
+		color: #ffffff;
+	}
+
+	&__title {
+		font-size: 36px;
+		padding: 110px 0px 20px;
+	}
+
+	&__subtitle {
+		font-size: 18px;
+		padding-bottom: 50px;
+	}
+
+	&__link {
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		border-radius: 28px;
+		background-color: #ffffff;
+		margin-bottom: 100px;
+		color: $blue;
+		padding: 20px 42px;
+		display: inline-block;
+		border: 1px solid transparent;
+		transition: all .5s;
+
+		&:hover,
+		&:focus {
+			color: #fff;
+			border: 1px solid #fff;
+			background-color: transparent;
+		}
+	}
+}
+/* Join End */
