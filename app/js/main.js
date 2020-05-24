@@ -50,16 +50,16 @@ $(function () {
 		prefix: "$"
 	});
 
-	// $('.icon-th-list').on('click', function () {
-	// 	$('.product-page__items .product__item').addClass('list');
-	// 	$('.icon-th-list').addClass('active');
-	// 	$('.icon-th-large').removeClass('active');
-	// });
-	// $('.icon-th-large').on('click', function () {
-	// 	$('.product-page__items .product__item').removeClass('list');
-	// 	$('.icon-th-large').addClass('active');
-	// 	$('.icon-th-list').removeClass('active');
-	// });
+	$('.icon-th-list').on('click', function () {
+		$('.category-page__product-item.product-item').addClass('list');
+		$('.icon-th-list').addClass('active');
+		$('.icon-th-large').removeClass('active');
+	});
+	$('.icon-th-large').on('click', function () {
+		$('.category-page__product-item.product-item').removeClass('list');
+		$('.icon-th-large').addClass('active');
+		$('.icon-th-list').removeClass('active');
+	});
 
 	// var mixer = mixitup('.release-products__inner');
 
