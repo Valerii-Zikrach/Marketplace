@@ -40,6 +40,27 @@ $(function () {
 		};
 	});
 
-	var mixer = mixitup('.release-products__inner');
+	$(".js-range-slider").ionRangeSlider({
+		type: "double",
+		min: 0,
+		max: 330,
+		from: 30,
+		to: 300,
+		grid: true,
+		prefix: "$"
+	});
+
+	// $('.icon-th-list').on('click', function () {
+	// 	$('.product-page__items .product__item').addClass('list');
+	// 	$('.icon-th-list').addClass('active');
+	// 	$('.icon-th-large').removeClass('active');
+	// });
+	// $('.icon-th-large').on('click', function () {
+	// 	$('.product-page__items .product__item').removeClass('list');
+	// 	$('.icon-th-large').addClass('active');
+	// 	$('.icon-th-list').removeClass('active');
+	// });
+
+	// var mixer = mixitup('.release-products__inner');
 
 });
