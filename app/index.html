@@ -19,7 +19,7 @@
 				<div class="header__top">
 					<div class="container">
 						<div class="header__top-inner">
-							<div class="header__logo">
+							<div class="header__logo header__logo-index">
 								<a href="#" class="header__logo-link logo-img">
 									<img src="images/logo.png" alt="logo">
 								</a>
@@ -80,7 +80,7 @@
 								</ul>
 							</nav>
 							<form class="header__search form-template">
-								<input class="header__search-input form-template__input" type="text"
+								<input class="header__search-input form-template__input" type="search"
 									placeholder="Search product here..." required>
 								<button class="header__search-btn form-template__btn" type="submit"></button>
 							</form>
@@ -127,7 +127,7 @@
 			</section>
 			<!--Tagline End -->
 			<!--Advantages Start -->
-			<section class="adavantages">
+			<section class="advantages">
 				<div class="container">
 					<div class="advantages__inner card-wrapper">
 						<a class="advantages__item card" href="#">
@@ -169,7 +169,56 @@
 				<div class="container">
 					<div class="featured-products__title head-title">Weekly Featured Products</div>
 					<div class="featured-products__inner">
-						<div class="featured-products__item product-item--big">
+						<article class="featured-products__item product-item--big">
+							<a class="featured-products__image item-image"
+								style="background-image:url(images/content/featured.jpg);" href="#">
+								featured product
+							</a>
+							<div class="featured-products__info item-description">
+								<a class="item-description__title" href="#">
+									One Page Resume Template
+								</a>
+								<div class="item-description__info item-description__info--top">
+									<a class="item-description__author-img" href="#"
+										style="background-image:url(images/content/user-photo.jpg);">
+										author image
+									</a>
+									<a class="item-description__author" href="#">
+										AazzTech
+									</a>
+									<a class="item-description__topic" href="#">
+										WordPress
+									</a>
+								</div>
+								<p class="item-description__text">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+									leo
+									quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+									scelerisque
+									the mattis, leo quam aliquet congue justo ut scelerisque.
+								</p>
+								<div class="item-description__hashtags">
+									<a href="#" class="item-description__hashtag btn--gray">
+										website
+									</a>
+									<a href="#" class="item-description__hashtag btn--gray">
+										plugin
+									</a>
+									<a href="#" class="item-description__hashtag btn--gray">
+										landing page
+									</a>
+								</div>
+								<div class="item-description__info item-description__info--bottom">
+									<div class="item-description__info--bottom-right">
+										<a href="#" class="item-description__price btn--blue">$10 - $50</a>
+										<a href="#" class="item-description__likes">46</a>
+										<a href="#" class="item-description__purchases">634</a>
+									</div>
+									<div class="item-description__rate"></div>
+								</div>
+							</div>
+						</article>
+						<article class="featured-products__item product-item--big">
 							<a class="featured-products__image item-image"
 								style="background-image:url(images/content/featured.jpg);" href="#">
 								featured product
@@ -210,15 +259,15 @@
 								</div>
 								<div class="item-description__info item-description__info--bottom">
 									<div class="item-description__info--bottom-right">
-										<a href="#" class="item-description__price">$10 - $50</a>
+										<a href="#" class="item-description__price btn--blue">$10 - $50</a>
 										<a href="#" class="item-description__likes">46</a>
 										<a href="#" class="item-description__purchases">634</a>
 									</div>
 									<div class="item-description__rate"></div>
 								</div>
 							</div>
-						</div>
-						<div class="featured-products__item product-item--big">
+						</article>
+						<article class="featured-products__item product-item--big">
 							<a class="featured-products__image item-image"
 								style="background-image:url(images/content/featured.jpg);" href="#">
 								featured product
@@ -259,63 +308,14 @@
 								</div>
 								<div class="item-description__info item-description__info--bottom">
 									<div class="item-description__info--bottom-right">
-										<a href="#" class="item-description__price">$10 - $50</a>
+										<a href="#" class="item-description__price btn--blue">$10 - $50</a>
 										<a href="#" class="item-description__likes">46</a>
 										<a href="#" class="item-description__purchases">634</a>
 									</div>
 									<div class="item-description__rate"></div>
 								</div>
 							</div>
-						</div>
-						<div class="featured-products__item product-item--big">
-							<a class="featured-products__image item-image"
-								style="background-image:url(images/content/featured.jpg);" href="#">
-								featured product
-							</a>
-							<div class="featured-products__info item-description">
-								<a class="item-description__title" href="#">
-									One Page Resume Template
-								</a>
-								<div class="item-description__info item-description__info--top">
-									<a class="item-description__author-img" href="#"
-										style="background-image:url(images/content/user-photo.jpg);">
-										author image
-									</a>
-									<a class="item-description__author" href="#">
-										AazzTech
-									</a>
-									<a class="item-description__topic" href="#">
-										WordPress
-									</a>
-								</div>
-								<p class="item-description__text">
-									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-									leo
-									quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-									scelerisque
-									the mattis, leo quam aliquet congue justo ut scelerisque.
-								</p>
-								<div class="item-description__hashtags">
-									<a href="#" class="item-description__hashtag">
-										website
-									</a>
-									<a href="#" class="item-description__hashtag">
-										plugin
-									</a>
-									<a href="#" class="item-description__hashtag">
-										landing page
-									</a>
-								</div>
-								<div class="item-description__info item-description__info--bottom">
-									<div class="item-description__info--bottom-right">
-										<a href="#" class="item-description__price">$10 - $50</a>
-										<a href="#" class="item-description__likes">46</a>
-										<a href="#" class="item-description__purchases">634</a>
-									</div>
-									<div class="item-description__rate"></div>
-								</div>
-							</div>
-						</div>
+						</article>
 					</div>
 				</div>
 			</section>
@@ -350,27 +350,27 @@
 						</div>
 					</div>
 					<div class="release-products__controls">
-						<button class="release-products__controls-btn" type="button" data-filter="all">Plugins</button>
-						<button class="release-products__controls-btn" type="button"
+						<button class="release-products__controls-btn btn--gray" type="button" data-filter="all">Plugins</button>
+						<button class="release-products__controls-btn btn--gray" type="button"
 							data-filter=".category-wordpress">WordPress</button>
-						<button class="release-products__controls-btn" type="button"
+						<button class="release-products__controls-btn btn--gray" type="button"
 							data-filter=".category-site__template">Site
 							Template</button>
-						<button class="release-products__controls-btn" type="button" data-filter=".category-psd">PSD
+						<button class="release-products__controls-btn btn--gray" type="button" data-filter=".category-psd">PSD
 							Template</button>
-						<button class="release-products__controls-btn" type="button"
+						<button class="release-products__controls-btn btn--gray" type="button"
 							data-filter=".category-joomla">Joomla</button>
-						<button class="release-products__controls-btn" type="button"
+						<button class="release-products__controls-btn btn--gray" type="button"
 							data-filter=".category-user__interface">User
 							Interface</button>
-						<button class="release-products__controls-btn" type="button"
+						<button class="release-products__controls-btn btn--gray" type="button"
 							data-filter=".category-landing__page">Landing
 							Page</button>
-						<button class="release-products__controls-btn" type="button"
+						<button class="release-products__controls-btn btn--gray" type="button"
 							data-filter=".category-software">Software</button>
 					</div>
 					<div class="release-products__inner product-inner">
-						<div class="release-products__item product-item mix category-software category-wordpress"
+						<article class="release-products__item product-item mix category-software category-wordpress"
 							data-order="1">
 							<div class="release-products__image product-image"
 								style="background-image:url(images/content/featured.jpg);">
@@ -402,15 +402,15 @@
 								</p>
 								<div class="item-description__info item-description__info--bottom">
 									<div class="item-description__info--bottom-right">
-										<a href="#" class="item-description__price">$20</a>
+										<a href="#" class="item-description__price btn--blue">$20</a>
 										<a href="#" class="item-description__likes">46</a>
 										<div class="item-description__rate"></div>
 									</div>
 									<a href="#" class="item-description__purchases">634</a>
 								</div>
 							</div>
-						</div>
-						<div class="release-products__item product-item mix category-site__template category-psd"
+						</article>
+						<article class="release-products__item product-item mix category-site__template category-psd"
 							data-order="2">
 							<div class="release-products__image product-image"
 								style="background-image:url(images/content/featured.jpg);">
@@ -442,15 +442,15 @@
 								</p>
 								<div class="item-description__info item-description__info--bottom">
 									<div class="item-description__info--bottom-right">
-										<a href="#" class="item-description__price">$20</a>
+										<a href="#" class="item-description__price btn--blue">$20</a>
 										<a href="#" class="item-description__likes">46</a>
 										<div class="item-description__rate"></div>
 									</div>
 									<a href="#" class="item-description__purchases">634</a>
 								</div>
 							</div>
-						</div>
-						<div class="release-products__item product-item mix category-plugins category-user__interface"
+						</article>
+						<article class="release-products__item product-item mix category-plugins category-user__interface"
 							data-order="3">
 							<div class="release-products__image product-image"
 								style="background-image:url(images/content/featured.jpg);">
@@ -482,15 +482,15 @@
 								</p>
 								<div class="item-description__info item-description__info--bottom">
 									<div class="item-description__info--bottom-right">
-										<a href="#" class="item-description__price">$20</a>
+										<a href="#" class="item-description__price btn--blue">$20</a>
 										<a href="#" class="item-description__likes">46</a>
 										<div class="item-description__rate"></div>
 									</div>
 									<a href="#" class="item-description__purchases">634</a>
 								</div>
 							</div>
-						</div>
-						<div class="release-products__item product-item mix category-plugins" data-order="4">
+						</article>
+						<article class="release-products__item product-item mix category-plugins" data-order="4">
 							<div class="release-products__image product-image"
 								style="background-image:url(images/content/featured.jpg);">
 								featured product
@@ -521,15 +521,15 @@
 								</p>
 								<div class="item-description__info item-description__info--bottom">
 									<div class="item-description__info--bottom-right">
-										<a href="#" class="item-description__price">$20</a>
+										<a href="#" class="item-description__price btn--blue">$20</a>
 										<a href="#" class="item-description__likes">46</a>
 										<div class="item-description__rate"></div>
 									</div>
 									<a href="#" class="item-description__purchases">634</a>
 								</div>
 							</div>
-						</div>
-						<div class="release-products__item product-item mix category-software category-wordpress"
+						</article>
+						<article class="release-products__item product-item mix category-software category-wordpress"
 							data-order="5">
 							<div class="release-products__image product-image"
 								style="background-image:url(images/content/featured.jpg);">
@@ -561,15 +561,15 @@
 								</p>
 								<div class="item-description__info item-description__info--bottom">
 									<div class="item-description__info--bottom-right">
-										<a href="#" class="item-description__price">$20</a>
+										<a href="#" class="item-description__price btn--blue">$20</a>
 										<a href="#" class="item-description__likes">46</a>
 										<div class="item-description__rate"></div>
 									</div>
 									<a href="#" class="item-description__purchases">634</a>
 								</div>
 							</div>
-						</div>
-						<div class="release-products__item product-item mix category-joomla category-landing__page"
+						</article>
+						<article class="release-products__item product-item mix category-joomla category-landing__page"
 							data-order="6">
 							<div class="release-products__image product-image"
 								style="background-image:url(images/content/featured.jpg);">
@@ -601,14 +601,14 @@
 								</p>
 								<div class="item-description__info item-description__info--bottom">
 									<div class="item-description__info--bottom-right">
-										<a href="#" class="item-description__price">$20</a>
+										<a href="#" class="item-description__price btn--blue">$20</a>
 										<a href="#" class="item-description__likes">46</a>
 										<div class="item-description__rate"></div>
 									</div>
 									<a href="#" class="item-description__purchases">634</a>
 								</div>
 							</div>
-						</div>
+						</article>
 					</div>
 					<div class="all-products__link">
 						<a href="#">All New Products</a>
@@ -623,7 +623,7 @@
 						Your Followers Feed
 					</div>
 					<div class="followers-feed__inner product-inner">
-						<div class="followers-feed__item product-item">
+						<article class="followers-feed__item product-item">
 							<div class="followers-feed__image product-image"
 								style="background-image:url(images/content/followers.jpg);">
 								featured product
@@ -654,15 +654,15 @@
 								</p>
 								<div class="item-description__info item-description__info--bottom">
 									<div class="item-description__info--bottom-right">
-										<a href="#" class="item-description__price">$20</a>
+										<a href="#" class="item-description__price btn--blue">$20</a>
 										<a href="#" class="item-description__likes">46</a>
 										<div class="item-description__rate"></div>
 									</div>
 									<a href="#" class="item-description__purchases">634</a>
 								</div>
 							</div>
-						</div>
-						<div class="followers-feed__item product-item">
+						</article>
+						<article class="followers-feed__item product-item">
 							<div class="followers-feed__image product-image"
 								style="background-image:url(images/content/followers.jpg);">
 								featured product
@@ -693,15 +693,15 @@
 								</p>
 								<div class="item-description__info item-description__info--bottom">
 									<div class="item-description__info--bottom-right">
-										<a href="#" class="item-description__price">$20</a>
+										<a href="#" class="item-description__price btn--blue">$20</a>
 										<a href="#" class="item-description__likes">46</a>
 										<div class="item-description__rate"></div>
 									</div>
 									<a href="#" class="item-description__purchases">634</a>
 								</div>
 							</div>
-						</div>
-						<div class="followers-feed__item product-item">
+						</article>
+						<article class="followers-feed__item product-item">
 							<div class="followers-feed__image product-image"
 								style="background-image:url(images/content/followers.jpg);">
 								featured product
@@ -732,15 +732,15 @@
 								</p>
 								<div class="item-description__info item-description__info--bottom">
 									<div class="item-description__info--bottom-right">
-										<a href="#" class="item-description__price">$20</a>
+										<a href="#" class="item-description__price btn--blue">$20</a>
 										<a href="#" class="item-description__likes">46</a>
 										<div class="item-description__rate"></div>
 									</div>
 									<a href="#" class="item-description__purchases">634</a>
 								</div>
 							</div>
-						</div>
-						<div class="followers-feed__item product-item">
+						</article>
+						<article class="followers-feed__item product-item">
 							<div class="followers-feed__image product-image"
 								style="background-image:url(images/content/followers.jpg);">
 								featured product
@@ -771,15 +771,15 @@
 								</p>
 								<div class="item-description__info item-description__info--bottom">
 									<div class="item-description__info--bottom-right">
-										<a href="#" class="item-description__price">$20</a>
+										<a href="#" class="item-description__price btn--blue">$20</a>
 										<a href="#" class="item-description__likes">46</a>
 										<div class="item-description__rate"></div>
 									</div>
 									<a href="#" class="item-description__purchases">634</a>
 								</div>
 							</div>
-						</div>
-						<div class="followers-feed__item product-item">
+						</article>
+						<article class="followers-feed__item product-item">
 							<div class="followers-feed__image product-image"
 								style="background-image:url(images/content/followers.jpg);">
 								featured product
@@ -810,15 +810,15 @@
 								</p>
 								<div class="item-description__info item-description__info--bottom">
 									<div class="item-description__info--bottom-right">
-										<a href="#" class="item-description__price">$20</a>
+										<a href="#" class="item-description__price btn--blue">$20</a>
 										<a href="#" class="item-description__likes">46</a>
 										<div class="item-description__rate"></div>
 									</div>
 									<a href="#" class="item-description__purchases">634</a>
 								</div>
 							</div>
-						</div>
-						<div class="followers-feed__item product-item">
+						</article>
+						<article class="followers-feed__item product-item">
 							<div class="followers-feed__image product-image"
 								style="background-image:url(images/content/followers.jpg);">
 								featured product
@@ -849,15 +849,14 @@
 								</p>
 								<div class="item-description__info item-description__info--bottom">
 									<div class="item-description__info--bottom-right">
-										<a href="#" class="item-description__price">$20</a>
+										<a href="#" class="item-description__price btn--blue">$20</a>
 										<a href="#" class="item-description__likes">46</a>
 										<div class="item-description__rate"></div>
 									</div>
 									<a href="#" class="item-description__purchases">634</a>
 								</div>
 							</div>
-						</div>
-
+						</article>
 					</div>
 				</div>
 			</section>
@@ -877,7 +876,7 @@
 							<div class="liberties-item__text">total sales</div>
 						</div>
 						<div class="liberties-item">
-							<div class="liberties-item__icon icon-smile"></div>
+							<div class="liberties-item__icon icon-smile-o"></div>
 							<div class="liberties-item__num liberties-item__num--green">2,736</div>
 							<div class="liberties-item__text">happy customers</div>
 						</div>
@@ -903,7 +902,7 @@
 						laborum dolo rumes fugats untras.
 					</div>
 					<div class="features__inner  card-wrapper">
-						<div class="features__item card">
+						<article class="features__item card">
 							<span class="features__item--num">01</span>
 							<div class="features__item-icon icon-drivers-license-o"></div>
 							<div class="features__item-title card-title">
@@ -913,8 +912,8 @@
 								Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
 								scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
 							</p>
-						</div>
-						<div class="features__item card">
+						</article>
+						<article class="features__item card">
 							<span class="features__item--num">02</span>
 							<div class="features__item-icon icon-magic-wand"></div>
 							<div class="features__item-title card-title">
@@ -924,8 +923,8 @@
 								Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
 								scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
 							</p>
-						</div>
-						<div class="features__item card">
+						</article>
+						<article class="features__item card">
 							<span class="features__item--num">03</span>
 							<div class="features__item-icon icon-lock"></div>
 							<div class="features__item-title card-title">
@@ -935,8 +934,8 @@
 								Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
 								scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
 							</p>
-						</div>
-						<div class="features__item  card">
+						</article>
+						<article class="features__item  card">
 							<span class="features__item--num">04</span>
 							<div class="features__item-icon icon-bar-chart"></div>
 							<div class="features__item-title card-title">
@@ -946,8 +945,8 @@
 								Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
 								scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
 							</p>
-						</div>
-						<div class="features__item  card">
+						</article>
+						<article class="features__item  card">
 							<span class="features__item--num">05</span>
 							<div class="features__item-icon icon-leaf"></div>
 							<div class="features__item-title card-title">
@@ -957,8 +956,8 @@
 								Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
 								scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
 							</p>
-						</div>
-						<div class="features__item card">
+						</article>
+						<article class="features__item card">
 							<span class="features__item--num">06</span>
 							<div class="features__item-icon icon-mobile"></div>
 							<div class="features__item-title card-title">
@@ -968,7 +967,7 @@
 								Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
 								scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
 							</p>
-						</div>
+						</article>
 					</div>
 				</div>
 			</section>
@@ -1035,44 +1034,98 @@
 							laborum dolo rumes fugats untras.
 						</div>
 						<div class="feedback__content">
-							<div class="feedback-item">
-								<div class="feedback-item__info">
-									<div class="feedback-item__img"
-										style="background-image: url(images/content/user-photo.jpg);">
-										user-photo
+							<article class="feedback-item__box">
+								<div class="feedback-item">
+									<div class="feedback-item__info">
+										<div class="feedback-item__img"
+											style="background-image: url(images/content/user-photo.jpg);">
+											user-photo
+										</div>
+										<div class="feedback-item__info-user">
+											<div class="feedback-item__name">Taofiqul Hakim</div>
+											<div class="feedback-item__profession">Product Designer</div>
+										</div>
 									</div>
-									<div class="feedback-item__info-user">
-										<div class="feedback-item__name">Taofiqul Hakim</div>
-										<div class="feedback-item__profession">Product Designer</div>
-									</div>
+									<p class="feedback-item__text">
+										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+										mattis,
+										leo
+										quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum
+										is
+										mollis.
+										Praesent the pharetra, justo ut scelerisque.
+									</p>
 								</div>
-								<p class="feedback-item__text">
-									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-									leo
-									quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is
-									mollis.
-									Praesent the pharetra, justo ut scelerisque.
-								</p>
-							</div>
-							<div class="feedback-item">
-								<div class="feedback-item__info">
-									<div class="feedback-item__img"
-										style="background-image: url(images/content/user-photo.jpg);">
-										user-photo
+							</article>
+							<article class="feedback-item__box">
+								<div class="feedback-item">
+									<div class="feedback-item__info">
+										<div class="feedback-item__img"
+											style="background-image: url(images/content/user-photo.jpg);">
+											user-photo
+										</div>
+										<div class="feedback-item__info-user">
+											<div class="feedback-item__name">Taofiqul Hakim</div>
+											<div class="feedback-item__profession">Product Designer</div>
+										</div>
 									</div>
-									<div class="feedback-item__info-user">
-										<div class="feedback-item__name">Saifullah Al Murtafee</div>
-										<div class="feedback-item__profession">Product Designer</div>
-									</div>
+									<p class="feedback-item__text">
+										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+										mattis,
+										leo
+										quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum
+										is
+										mollis.
+										Praesent the pharetra, justo ut scelerisque.
+									</p>
 								</div>
-								<p class="feedback-item__text">
-									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-									leo
-									quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is
-									mollis.
-									Praesent the pharetra, justo ut scelerisque.
-								</p>
-							</div>
+							</article>
+							<article class="feedback-item__box">
+								<div class="feedback-item">
+									<div class="feedback-item__info">
+										<div class="feedback-item__img"
+											style="background-image: url(images/content/user-photo.jpg);">
+											user-photo
+										</div>
+										<div class="feedback-item__info-user">
+											<div class="feedback-item__name">Taofiqul Hakim</div>
+											<div class="feedback-item__profession">Product Designer</div>
+										</div>
+									</div>
+									<p class="feedback-item__text">
+										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+										mattis,
+										leo
+										quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum
+										is
+										mollis.
+										Praesent the pharetra, justo ut scelerisque.
+									</p>
+								</div>
+							</article>
+							<article class="feedback-item__box">
+								<div class="feedback-item">
+									<div class="feedback-item__info">
+										<div class="feedback-item__img"
+											style="background-image: url(images/content/user-photo.jpg);">
+											user-photo
+										</div>
+										<div class="feedback-item__info-user">
+											<div class="feedback-item__name">Taofiqul Hakim</div>
+											<div class="feedback-item__profession">Product Designer</div>
+										</div>
+									</div>
+									<p class="feedback-item__text">
+										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+										mattis,
+										leo
+										quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum
+										is
+										mollis.
+										Praesent the pharetra, justo ut scelerisque.
+									</p>
+								</div>
+							</article>
 						</div>
 						<a href="#" class="feedback__link">View All Reviews</a>
 					</div>
@@ -1092,7 +1145,7 @@
 						laborum dolo rumes fugats untras.
 					</div>
 					<div class="news__inner product-inner">
-						<div class="news__item product-item">
+						<article class="news__item product-item">
 							<div class="news__image product-image" style="background-image:url(images/content/followers.jpg);">
 								featured product
 							</div>
@@ -1112,8 +1165,8 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="news__item product-item">
+						</article>
+						<article class="news__item product-item">
 							<div class="news__image product-image" style="background-image:url(images/content/followers.jpg);">
 								featured product
 							</div>
@@ -1133,8 +1186,8 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="news__item product-item">
+						</article>
+						<article class="news__item product-item">
 							<div class="news__image product-image" style="background-image:url(images/content/followers.jpg);">
 								featured product
 							</div>
@@ -1154,7 +1207,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</article>
 					</div>
 				</div>
 			</section>

@@ -11,32 +11,17 @@ $red: #ff6a6d;
 $text-accent:#555555;
 $text-secondary:#333333;
 
-%f300{
-	font-family: 'Quicksand';
-	font-weight: 300;
-}
-%f400{
-	font-family: 'Quicksand';
-	font-weight: 400;
-}
-%f500{
-	font-family: 'Quicksand';
-	font-weight: 500;
-}
-%f700{
-	font-family: 'Quicksand';
-	font-weight: 700;
-}
-%icon{
+
+@mixin icon{
 	font-family: 'icomoon';
 	position: absolute;
 }
-%flex-space-between{
+@mixin flex-space-between{
 	display:flex;
 	justify-content: space-between;
 	align-items:center;
 }
-%back-image{
+@mixin back-image{
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size: cover;

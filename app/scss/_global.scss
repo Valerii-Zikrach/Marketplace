@@ -17,6 +17,7 @@ body {
 .wrapper {
 	display: flex;
 	flex-direction: column;
+	min-height: 100%;
 }
 
 .content {
@@ -26,12 +27,14 @@ body {
 .footer {
 	flex: 0 0 auto;
 }
+
 /* Sticky Footer End */
 
 a {
 	text-decoration: none;
 }
 
+figure,
 p {
 	margin: 0;
 }
@@ -40,27 +43,101 @@ ul,
 li {
 	margin: 0;
 	padding: 0;
-	list-style: none;
 }
 
-figure {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	margin: 0;
+	font-size: inherit;
 }
-address{
+
+
+address {
 	font-style: normal;
 }
 
 button {
 	cursor: pointer;
+	padding: 0;
+	margin: 0;
+	outline: transparent;
+	border: none;
 }
 
 body {
-	@extend %f400;
+	font-family: 'Quicksand';
+	font-weight: 400;
 	font-size: 16px;
+	background-color: #eff1f5;
 }
 
 .container {
 	max-width: 1170px;
 	padding: 0 15px;
 	margin: 0px auto;
+}
+
+.btn__template--blue,
+.btn__template--white {
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 30px;
+	border: 1px solid transparent;
+	transition: all .5s;
+	display: inline-block;
+	padding: 15px 49px;
+}
+
+.btn__template--blue {
+	background-color: $blue;
+	color: #fff;
+
+	&:hover,
+	&:focus {
+		color: $blue;
+		background-color: transparent;
+		border: 1px solid $blue;
+	}
+}
+
+.btn__template--white {
+	background-color: #fff;
+	color: $blue;
+
+	&:hover,
+	&:focus {
+		color: #fff;
+		background-color:$blue;
+		border: 1px solid $blue;
+	}
+}
+
+
+.btn--gray,
+.btn--blue {
+	border: none;
+	font-size: 15px;
+	margin: 0;
+	padding: 7px 19px;
+	border-radius: 16px;
+	transition: all .5s;
+
+	&:hover,
+	&:focus {
+		color: #fff;
+		background-color: $blue;
+	}
+}
+
+.btn--blue {
+	color: $blue;
+	background-color: rgba(6, 116, 236, 0.1);
+}
+
+.btn--gray {
+	color: #747b86;
+	background-color: #f1f3f6;
 }
