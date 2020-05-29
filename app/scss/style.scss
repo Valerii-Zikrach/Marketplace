@@ -3329,6 +3329,98 @@
 }
 
 /* Error page End */
+/* welcome/Login page Start */
+.welcome {
+	.login__head {
+		text-align: center;
+		border-bottom: 1px solid #e8ebf0;
+	}
+
+	.login__inner {
+		padding: 60px 0;
+	}
+
+	.login__head-title {
+		color: #000000;
+		font-size: 26px;
+		margin-bottom: 26px;
+	}
+
+	.login__head-subtitle {
+		color: $text-accent;
+		margin-bottom: 30px;
+	}
+
+	.login__form-label {
+		display: block;
+		margin-top: 30px;
+	}
+
+	.login__form-label--checkbox {
+		padding-left: 35px;
+		position: relative;
+		margin-bottom: 33px;
+	}
+
+	.login__form-checkbox {
+		display: none;
+
+		&:checked+label:before {
+			content: "\f00c";
+			@include icon;
+			font-size: 16px;
+			color: #fff;
+			left: 2px;
+			top: 1px;
+			z-index: 10;
+		}
+
+		&+label:after {
+			content: "";
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			left: 0;
+			border: 2px solid $blue;
+			background-color: transparent;
+		}
+
+		&:checked+label:after {
+			content: "";
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			left: 0;
+			background-color: $blue;
+		}
+	}
+}
+
+.recovery {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 50px;
+
+	&__links {
+		color: #898f96;
+	}
+
+	&__link {
+		color: $blue;
+		transition: all .5s;
+
+		&:hover,
+		&:focus {
+			color: $red;
+		}
+
+	}
+}
+
+/* welcome/Login page End */
+
 
 /* Media */
 @import'media';
