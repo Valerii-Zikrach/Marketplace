@@ -3670,13 +3670,144 @@
 			right: 310px;
 			width: 50px;
 			height: 50px;
-			background-image:url(../images/map-marker.png);
+			background-image: url(../images/map-marker.png);
 		}
 	}
 }
 
 /* Map End*/
 /* Contact page End*/
+/* Pricing-plan page Start*/
+.plan {
+	text-align: center;
+	padding: 123px 0px 120px;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		max-width: 360px;
+		width: 100%;
+		box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+		border-radius: 4px;
+		background-color: #ffffff;
+		padding: 30px;
+
+		&--red {
+			border-top: 1px solid $red;
+		}
+
+		&--blue {
+			border-top: 1px solid $blue;
+		}
+
+		&--yellow {
+			border-top: 1px solid $yellow;
+		}
+	}
+
+	&__item-title {
+		color: #000000;
+		font-size: 24px;
+		font-weight: 500;
+		padding-bottom: 28px;
+		border-bottom: 1px solid #e8ebf0;
+	}
+
+	&__item-price {
+		padding: 29px 0px 48px;
+		color: #000000;
+		font-size: 36px;
+
+		&--sup {
+			font-size: 18px;
+			position: relative;
+			top: -13px;
+			color: #000000;
+		}
+
+		&--month {
+			color: $text-accent;
+			font-size: 16px;
+		}
+	}
+
+	&__list {
+		text-align: left;
+		padding-left: 23px;
+		margin-bottom: 25px;
+		color:$text-accent;
+		font-weight: 400%;
+	}
+
+	&__list-item {
+		margin-bottom: 15px;
+		color: #c5cad4;
+		&--accent {
+			color: $text-accent;
+			font-weight: 500;
+		}
+		&--black {
+			color: #000000;
+			font-weight: 500;
+		}
+		&--question{
+			position: relative;
+			&:after{
+				@include icon;
+				content: "\ea09";
+				color: $text-accent;
+				font-size: 18px;
+				margin-left:10px;
+			}
+		}
+	}
+
+	&__btn {
+		display: block;
+		padding: 15px 80px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		border-radius: 4px;
+		color: #fff;
+		border: 1px solid transparent;
+		transition: all .3s;
+
+		&--red {
+			background-color: $red;
+
+			&:hover,
+			&:focus {
+				border: 1px solid $red;
+				color: $red;
+				background-color: transparent;
+			}
+		}
+
+		&--blue {
+			background-color: $blue;
+			&:hover,
+			&:focus {
+				border: 1px solid $blue;
+				color: $blue;
+				background-color: transparent;
+			}
+		}
+
+		&--yellow {
+			background-color: $yellow;
+			&:hover,
+			&:focus {
+				border: 1px solid $yellow;
+				color: $yellow;
+				background-color: transparent;
+			}
+		}
+	}
+}
+
+/* Pricing-plan page End*/
 
 
 /* Media */
