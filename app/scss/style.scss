@@ -3426,6 +3426,7 @@
 		background-color: #fff;
 		margin-bottom: 80px;
 	}
+
 	.category-filter__title {
 		color: #000000;
 		font-size: 24px;
@@ -3434,6 +3435,7 @@
 			font-weight: 500;
 		}
 	}
+
 	.release-products {
 
 		&__head-filter {
@@ -3441,6 +3443,7 @@
 			border-right: 1px solid #eceff2;
 			height: 100px;
 			padding: 0px 30px 0px 25px;
+
 			.icon-angle-down {
 				background-color: transparent;
 				color: $text-accent;
@@ -3478,7 +3481,6 @@
 			}
 		}
 
-		
 	}
 
 	.pagination {
@@ -3491,6 +3493,21 @@
 }
 
 /* Favourite page End */
+/* Register page Start */
+.login.welcome.register{
+	.login {
+	
+		&__head-title {
+			margin-bottom: 12px;
+		}
+	
+		&__head-subtitle {
+			margin: 0px 60px 23px;
+			line-height: 28px;
+		}
+	}
+}
+/* Register page End*/
 
 
 /* Media */
