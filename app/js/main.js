@@ -45,7 +45,7 @@ $(function () {
 		};
 	}); */
 
-	$('.icon-dots-three-vertical, .head-filter__text').on('click',function (){
+	$('.icon-dots-three-vertical,.icon-angle-down, .head-filter__text').on('click',function (){
 		$('.head-filter__list').slideToggle(1000).toggleClass('head-filter__list--active');
 	});
 
