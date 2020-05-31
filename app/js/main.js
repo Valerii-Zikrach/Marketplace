@@ -21,31 +21,31 @@ $(function () {
 	});
 	$('.feedback__content').slick({
 		dots: false,
-		arrows:true,
+		arrows: true,
 		slidesToShow: 2,
 		slidesToScroll: 2
 	});
 
-/* 
-	 const menuBtn = $('.icon-dots-three-vertical, .head-filter__text'),
-		menu = $('.head-filter__list');
-	menuBtn.on('click', function () {
-		if ($('.head-filter__list').hasClass('head-filter__list--active')) {
-			$('.head-filter__list').removeClass('head-filter__list--active');
-			menu.slideUp();
-		} else {
-			$('.head-filter__list').addClass('head-filter__list--active');
-			menu.slideDown();
-		}
-	}); 
-	$(document).click(function (e) {
-		if (!menuBtn.is(e.target) && !menu.is(e.target) && menu.has(e.target).length === 0) {
-			menu.slideUp();
-			menu.removeClass('head-filter__list--active');
-		};
-	}); */
+	/* 
+		 const menuBtn = $('.icon-dots-three-vertical, .head-filter__text'),
+			menu = $('.head-filter__list');
+		menuBtn.on('click', function () {
+			if ($('.head-filter__list').hasClass('head-filter__list--active')) {
+				$('.head-filter__list').removeClass('head-filter__list--active');
+				menu.slideUp();
+			} else {
+				$('.head-filter__list').addClass('head-filter__list--active');
+				menu.slideDown();
+			}
+		}); 
+		$(document).click(function (e) {
+			if (!menuBtn.is(e.target) && !menu.is(e.target) && menu.has(e.target).length === 0) {
+				menu.slideUp();
+				menu.removeClass('head-filter__list--active');
+			};
+		}); */
 
-	$('.icon-dots-three-vertical,.icon-angle-down, .head-filter__text').on('click',function (){
+	$('.icon-dots-three-vertical,.icon-angle-down, .head-filter__text').on('click', function () {
 		$('.head-filter__list').slideToggle(1000).toggleClass('head-filter__list--active');
 	});
 
@@ -68,6 +68,19 @@ $(function () {
 		$('.category-page__product-item.product-item').removeClass('list');
 		$('.icon-th-large').addClass('active');
 		$('.icon-th-list').removeClass('active');
+	});
+
+	$('.single__item-tabs .tab').on('click', function (event) {
+		var id = $(this).attr('data-id');
+		$('.single__item-tabs').find('.tab-item').removeClass('active-tab').hide();
+		$('.single__item-tabs .tabs').find('.tab').removeClass('active');
+		$(this).addClass('active');
+		$('#' + id).addClass('active-tab').fadeIn();
+		return false;
+	});
+
+	$('.aside-license__label, aside-license__input').on('click', function () {
+		$('.aside-license__price').toggleClass('aside-license__price--active');
 	});
 
 	var mixer = mixitup('.release-products__inner, .category-page__content-inner');
