@@ -156,7 +156,7 @@
 													</div>
 													<div class="user-message__info-col">
 														<button class="user-message__info-btn icon-trash-o" type="button"></button>
-														<span class="user-message__info-text item-description__price">$20</span>
+														<span class=" item-description__price btn--blue">$20</span>
 													</div>
 												</div>
 											</div>
@@ -174,7 +174,7 @@
 													</div>
 													<div class="user-message__info-col">
 														<button class="user-message__info-btn icon-trash-o" type="button"></button>
-														<span class="user-message__info-text item-description__price">$20</span>
+														<span class="item-description__price btn--blue">$20</span>
 													</div>
 												</div>
 											</div>
@@ -190,7 +190,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="header-link__box header-link__box-user">
+									<div class="header-link__box header-link__box-user user-cabinet--main">
 										<a class="user-cabinet__img" style="background-image:url(images/content/user-photo.jpg);"
 											href="#">user-photo</a>
 										<div class="user-cabinet__info">
@@ -345,10 +345,10 @@
 												Pages
 											</a>
 											<div class="header-link__menu pages-menu">
-												<div class="pages-menu__item">
-													<div class="pages-menu__title">MartPlace Pages</div>
+												<div class="pages-menu__item pages-menu__item--left">
+													<div class="pages-menu__title pages-menu__title--left">MartPlace Pages</div>
 													<div class="pages-menu__container pages-menu__container--left">
-														<ul class="pages-menu__list">
+														<ul class="pages-menu__list pages-menu__list--left">
 															<li class="header-link__menu-item">
 																<a class="header-link__menu-link" href="#">Home Page One</a>
 															</li>
@@ -383,7 +383,7 @@
 																<a class="header-link__menu-link" href="#">Single Product V-3</a>
 															</li>
 														</ul>
-														<ul class="pages-menu__list">
+														<ul class="pages-menu__list pages-menu__list--left">
 															<li class="header-link__menu-item">
 																<a class="header-link__menu-link" href="#">Single Items Comments</a>
 															</li>
@@ -421,9 +421,9 @@
 														</ul>
 													</div>
 												</div>
-												<div class="pages-menu__item">
-													<div class="pages-menu__title">Dashboard</div>
-													<ul class="pages-menu__list">
+												<div class="pages-menu__item pages-menu__item--center">
+													<div class="pages-menu__title pages-menu__title--center">Dashboard</div>
+													<ul class="pages-menu__list pages-menu__list--center">
 														<li class="header-link__menu-item">
 															<a class="header-link__menu-link" href="#">Dashboard</a>
 														</li>
@@ -459,10 +459,10 @@
 														</li>
 													</ul>
 												</div>
-												<div class="pages-menu__item">
-													<div class="pages-menu__title">Others Pages</div>
+												<div class="pages-menu__item pages-menu__item--right">
+													<div class="pages-menu__title pages-menu__title--right">Others Pages</div>
 													<div class="pages-menu__container pages-menu__container--right">
-														<ul class="pages-menu__list">
+														<ul class="pages-menu__list pages-menu__list--right">
 															<li class="header-link__menu-item">
 																<a class="header-link__menu-link" href="#">Notifications</a>
 															</li>
@@ -497,7 +497,7 @@
 																<a class="header-link__menu-link" href="#">How It Works</a>
 															</li>
 														</ul>
-														<ul class="pages-menu__list">
+														<ul class="pages-menu__list pages-menu__list--right">
 															<li class="header-link__menu-item">
 																<a class="header-link__menu-link" href="#">About Us</a>
 															</li>
@@ -543,8 +543,13 @@
 									</li>
 								</ul>
 							</nav>
+							<button type="button" class="header-btn">
+								<span class="top-line"></span>
+								<span class="middle-line"></span>
+								<span class="bottom-line"></span>
+							</button>
 							<form class="header__search form-template">
-								<input class="header__search-input form-template__input" type="text"
+								<input class="header__search-input form-template__input" type="search"
 									placeholder="Search product here..." required>
 								<button class="header__search-btn form-template__btn" type="submit"></button>
 							</form>
@@ -897,29 +902,33 @@
 						<aside class="single__aside">
 							<div class="single__aside-item aside-license">
 								<div class="aside-license__price aside-license__price--active">
-									<sup class="aside-license__price--sup">$</sup>60.00 
+									<sup class="aside-license__price--sup">$</sup>60.00
 								</div>
 								<div class="aside-license__price">
-									<sup class="aside-license__price--sup">$</sup>100.00 
+									<sup class="aside-license__price--sup">$</sup>100.00
 								</div>
 								<form class="aside-license__form">
 									<div class="aside-license__form-row">
-										<input class="aside-license__input" checked id="single-license" type="radio" name="license">
+										<input class="aside-license__input" checked id="single-license" type="radio"
+											name="license">
 										<label class="aside-license__label" for="single-license">Single User License</label>
 										<p class="aside-license__text">
-										  Nunc placerat mi id nisi interdum is mollis. Praesent pharetra, justo ut sceleris que the mattis, leo quam.
+											Nunc placerat mi id nisi interdum is mollis. Praesent pharetra, justo ut sceleris que
+											the mattis, leo quam.
 										</p>
 									</div>
 									<div class="aside-license__form-row">
 										<input class="aside-license__input" id="multi-license" type="radio" name="license">
 										<label class="aside-license__label" for="multi-license">Multi User License</label>
 										<p class="aside-license__text">
-											Nunc placerat mi id nisi interdum is mollis. Praesent pharetra, justo ut sceleris que the mattis, leo quam.
-										 </p>
+											Nunc placerat mi id nisi interdum is mollis. Praesent pharetra, justo ut sceleris que
+											the mattis, leo quam.
+										</p>
 									</div>
 									<div class="aside-license__buttons">
 										<button class="aside-license__btn btn__template--blue">Purchase Now</button>
-										<button class="aside-license__btn single__item-link--violet btn__template--white"> Add To Cart</button>
+										<button class="aside-license__btn single__item-link--violet btn__template--white"> Add To
+											Cart</button>
 									</div>
 								</form>
 							</div>

@@ -676,6 +676,11 @@
 		}
 	}
 }
+button.header-btn {
+	overflow: hidden;
+	padding: 0;
+	border: none;
+}
 
 /* Link menu Start */
 .header-link__box {
@@ -3493,6 +3498,20 @@
 	}
 }
 
+.release-products__item.product-item.list {
+	max-width: 100%;
+	display: flex;
+
+	.release-products__image.product-image {
+		width: 50%;
+	}
+
+	.item-description__price,
+	.item-description__likes {
+		margin-right: 120px;
+	}
+}
+
 /* Favourite page End */
 /* Register page Start */
 .login.welcome.register {
@@ -4557,9 +4576,10 @@
 			font-size: 36px;
 			font-weight: 500;
 			padding: 40px 0;
-			display:none;
-			&--active{
-				display:block;
+			display: none;
+
+			&--active {
+				display: block;
 			}
 		}
 
@@ -4572,7 +4592,8 @@
 			text-align: left;
 			padding: 0px 30px 10px;
 		}
-		&__buttons{
+
+		&__buttons {
 			margin-top: 20px;
 		}
 
@@ -4587,15 +4608,18 @@
 
 		&__input {
 			display: none;
-				&+label+.aside-license__text{
-					display:none;
-				}
-				&:checked+label+.aside-license__text{
-					display:block;
-				}
-				&:checked .aside-license__form-row{
-					border-bottom: none;
-				}
+
+			&+label+.aside-license__text {
+				display: none;
+			}
+
+			&:checked+label+.aside-license__text {
+				display: block;
+			}
+
+			&:checked .aside-license__form-row {
+				border-bottom: none;
+			}
 
 			&:checked+label:before {
 				content: "\f00c";
@@ -4646,13 +4670,6 @@
 
 	}
 }
-
-
-
-
-
-
-
 
 /* Single section End */
 /* Single-product page End*/

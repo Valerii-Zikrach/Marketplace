@@ -70,6 +70,17 @@ $(function () {
 		$('.icon-th-list').removeClass('active');
 	});
 
+	$('.icon-th-list').on('click', function () {
+		$('.release-products__item.product-item').addClass('list');
+		$('.icon-th-list').addClass('active');
+		$('.icon-th-large').removeClass('active');
+	});
+	$('.icon-th-large').on('click', function () {
+		$('.release-products__item.product-item').removeClass('list');
+		$('.icon-th-large').addClass('active');
+		$('.icon-th-list').removeClass('active');
+	});
+
 	$('.single__item-tabs .tab').on('click', function (event) {
 		var id = $(this).attr('data-id');
 		$('.single__item-tabs').find('.tab-item').removeClass('active-tab').hide();
@@ -83,5 +94,35 @@ $(function () {
 		$('.aside-license__price').toggleClass('aside-license__price--active');
 	});
 
-	var mixer = mixitup('.release-products__inner, .category-page__content-inner');
+	$('.blog-aside__btn--popular').on('click', function () {
+		$('.blog-aside__btn--popular').addClass('blog-aside__btn--active');
+		$('.blog-aside__btn--latest').removeClass('blog-aside__btn--active');
+	});
+	$('.blog-aside__btn--latest').on('click', function () {
+		$('.blog-aside__btn--latest').addClass('blog-aside__btn--active');
+		$('.blog-aside__btn--popular').removeClass('blog-aside__btn--active');
+	});
+
+	$('.header-btn').on('click', function () {
+		$(this).toggleClass('active');
+	});
+	$('.header-btn').on('click', function () {
+		$('.header__menu').slideToggle();
+	});
+
+	$('.pages-menu__title').on('click', function () {
+		$(this).toggleClass('active');
+	});
+	$('.pages-menu__title--left').on('click', function () {
+		$('.pages-menu__list--left').toggleClass('active');
+	});
+	$('.pages-menu__title--center').on('click', function () {
+		$('.pages-menu__list--center').toggleClass('active');
+	});
+	$('.pages-menu__title--right').on('click', function () {
+		$('.pages-menu__list--right').toggleClass('active');
+	});
+
+
+	// var mixer = mixitup('.release-products__inner, .category-page__content-inner,.blog-articles, .blog-aside__news');
 });
