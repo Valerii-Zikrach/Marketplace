@@ -123,6 +123,7 @@ $(function () {
 		$('.pages-menu__list--right').toggleClass('active');
 	});
 
+	$('#sort-select, #items-select').styler();
 
-	// var mixer = mixitup('.release-products__inner, .category-page__content-inner,.blog-articles, .blog-aside__news');
+	var mixer = mixitup('.release-products__inner, .category-page__content-inner,.blog-articles, .blog-aside__news');
 });

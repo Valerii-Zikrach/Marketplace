@@ -614,13 +614,13 @@
 							<form class="category-filter__form">
 								<div class="category-filter__form-select form-select__price">
 									<label for="sort-select">Price :</label>
-									<select id="sort-select">
-										<option data-sort="order:asc" value="asc">Low to High</option>
-										<option data-sort="order:desc" value="desc">High to Low</option>
-									</select>
+									 <select id="sort-select">
+										<option  value="order:asc">Low to High</option>
+										<option  value="order:desc">High to Low</option>
+									</select> 
 								</div>
 								<div class="category-filter__form-select form-select__items">
-									<select name="Items per page">
+									<select id="items-select">
 										<option value="1" selected>12 Items Per Page</option>
 										<option value="2">3 Items Per Page</option>
 										<option value="3">6 Items Per Page</option>
@@ -638,7 +638,7 @@
 				</div>
 				<div class="favourites__content">
 					<div class="container">
-						<div class="release-products__inner product-inner">
+						<div id="Container" class="release-products__inner product-inner">
 							<article class="release-products__item product-item mix category-software category-wordpress"
 								data-order="1">
 								<div class="release-products__image product-image"

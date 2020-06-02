@@ -2555,6 +2555,7 @@ button.header-btn {
 				position: relative;
 				border-radius: 3px;
 				border: 1px solid #eceff2;
+				font-size: 16px;
 
 				&:hover,
 				&:focus {
@@ -2576,7 +2577,7 @@ button.header-btn {
 					content: "\f107";
 					@include icon;
 					top: 9px;
-					right: 21px;
+					right: 14px;
 					font-size: 22px;
 					color: $text-accent;
 					pointer-events: none;
@@ -3509,6 +3510,45 @@ button.header-btn {
 	.item-description__price,
 	.item-description__likes {
 		margin-right: 120px;
+	}
+}
+.category-filter__form-select.form-select__price,
+.category-filter__form-select.form-select__items{
+	.jq-selectbox__select{
+		height: 42px;
+		padding: 0 45px 0 5px;
+		background:transparent;
+		border:none;
+		border-radius: 0;
+		box-shadow:none;
+		text-shadow: none;
+		color:$text-accent;
+		font-family: 'Quicksand';
+	 font-weight: 400;
+	 font-size: 15px;
+	}
+	.jq-selectbox__select-text{
+		line-height: 40px;
+	}
+	.jq-selectbox__trigger{
+	 border-left:0px;
+	}
+	.jq-selectbox__trigger-arrow {
+		display:none;
+	}
+	.jq-selectbox__dropdown {
+		padding: 0;
+		border-radius: 0;
+		box-shadow: none;
+		color:$text-accent;
+		font-family: 'Quicksand';
+	 font-weight: 400;
+	}
+}
+.category-filter__form-select.form-select__items{
+	.jq-selectbox__select{
+		padding: 1px 20px 1px 20px;
+		width: 220px;
 	}
 }
 
