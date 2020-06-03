@@ -174,8 +174,7 @@
 													</div>
 													<div class="user-message__info-col">
 														<button class="user-message__info-btn icon-trash-o" type="button"></button>
-														<span
-															class="item-description__price btn--blue">$20</span>
+														<span class="item-description__price btn--blue">$20</span>
 													</div>
 												</div>
 											</div>
@@ -586,10 +585,10 @@
 				<form class="search-products">
 					<input class="search-products__input" type="text" placeholder="Search your products..." required>
 					<div class="search-products__select">
-						<select name="Categories">
-							<option value="1" selected>All Categories</option>
-							<option value="2">Categorie 1</option>
-							<option value="3">Categorie 2</option>
+						<select class="category-select" id="category-select">
+							<option class="category-option" value="1" selected>All Categories</option>
+							<option class="category-option" value="2">Categorie 1</option>
+							<option class="category-option" value="3">Categorie 2</option>
 						</select>
 					</div>
 					<button class="search-products__btn" type="submit">Search Now</button>
@@ -820,7 +819,8 @@
 						</div>
 					</div>
 					<div class="release-products__controls">
-						<button class="release-products__controls-btn btn--gray" type="button" data-filter="all">Plugins</button>
+						<button class="release-products__controls-btn btn--gray" type="button"
+							data-filter="all">Plugins</button>
 						<button class="release-products__controls-btn btn--gray" type="button"
 							data-filter=".category-wordpress">WordPress</button>
 						<button class="release-products__controls-btn btn--gray" type="button"
