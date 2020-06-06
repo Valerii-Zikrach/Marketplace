@@ -474,6 +474,11 @@
 	.user-btn {
 		display: none;
 	}
+	.user-btn--become,
+	.user-btn--register,
+	.user-btn--login{
+		display: block;
+	}
 
 	.header-link__box .header-link__menu.pages-menu {
 		max-width: 220px;
@@ -914,6 +919,9 @@
 		.slick-track {
 			margin: 0px;
 		}
+	}
+	.user-btn--become{
+		display: none;
 	}
 }
 
@@ -1689,6 +1697,13 @@
 			font-size: 16px;
 			margin-bottom: 2px;
 		}
+	}
+	.user-btn--register,
+	.user-btn--login{
+		text-align: center;
+		margin-left: 10px;
+		width: 60px;
+		padding: 0px;
 	}
 }
 
