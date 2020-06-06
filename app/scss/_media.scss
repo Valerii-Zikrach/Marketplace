@@ -381,6 +381,7 @@
 		height: 44px;
 		border: none;
 		outline: none;
+		background-color: transparent;
 	}
 
 	.header-btn span {
@@ -979,7 +980,7 @@
 		padding: 40px 0px 40px;
 	}
 
-	.welcome .login__inner {
+	 .login__inner {
 		padding: 20px 0;
 
 		.login__head-title,

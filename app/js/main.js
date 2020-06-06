@@ -156,5 +156,5 @@ $(function () {
 
 
 
-	// var mixer = mixitup('.release-products__inner, .category-page__content-inner,.blog-articles, .blog-aside__news');
+	var mixer = mixitup('.release-products__inner, .category-page__content-inner,.blog-articles, .blog-aside__news');
 });

@@ -782,6 +782,27 @@ button.header-btn {
 		margin-top: 20px;
 	}
 }
+.user-btn--login{
+	background-color:$red;
+	margin-left: 20px;
+	&:hover,
+	&:focus{
+		background-color: rgba(236, 6, 83, 0.438);
+	}
+}
+.user-btn--register{
+	background-color:$violet;
+	margin-left: 10px;
+	&:hover,
+	&:focus{
+		background-color: rgba(228, 6, 236, 0.438);
+	}
+}
+
+// .pages-menu__list{
+// 	column-count: 2;
+// 	column-gap: 50px;
+// }
 
 /* Link menu End */
 /* Header End */
@@ -1469,60 +1490,67 @@ button.header-btn {
 	}
 
 	&-image {
-		display: block;
-		font-size: 0;
 		width: 100%;
-		min-height: 230px;
-		position: relative;
-		@include back-image;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-
-		.hover-links {
-			&:after {
-				content: "";
-				position: absolute;
-				top: 0;
-				left: 0;
-				bottom: 0;
-				width: 100%;
-				border-radius: 4px 4px 0 0;
-				background-color: #009688;
-				background-image: linear-gradient(to left, #0674ec 0%, #7347c1 100%);
-				z-index: 1;
-				opacity: 0;
-				transition: all 1s;
-			}
-
-			.hover__link {
-				box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-				border-radius: 23px;
-				background-color: #ffffff;
-				color: #0674ec;
-				font-size: 15px;
-				font-weight: 500;
-				padding: 13px 28px;
-				position: relative;
-				z-index: 10;
-				margin: 0px 5px;
-				border: 1px solid transparent;
-				transition: all 1s;
-				opacity: 0;
-				visibility: hidden;
-
-				&:hover {
-					color: #fff;
-					background-color: transparent;
-					border: 1px solid #fff;
-				}
-			}
-		}
+		height: 230px;
+		display: block;
+		object-fit: cover;
 	}
 }
 
-.product-item {
-	&:hover .hover-links:after {
+.image-box {
+	position: relative;
+
+
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		border-radius: 4px 4px 0 0;
+		background-color: #009688;
+		background-image: linear-gradient(to left, #0674ec 0%, #7347c1 100%);
+		z-index: 1;
+		opacity: 0;
+		transition: all 1s;
+	}
+
+	.hover-links {
+		position: absolute;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 10;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		.hover__link {
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+			border-radius: 23px;
+			background-color: #ffffff;
+			color: #0674ec;
+			font-size: 15px;
+			font-weight: 500;
+			padding: 13px 28px;
+			margin: 0px 5px;
+			border: 1px solid transparent;
+			transition: all 1s;
+			opacity: 0;
+			visibility: hidden;
+
+			&:hover {
+				color: #fff;
+				background-color: transparent;
+				border: 1px solid #fff;
+			}
+		}
+	}
+
+	&:hover:after {
 		opacity: .9;
 	}
 
@@ -2111,6 +2139,7 @@ button.header-btn {
 .capability-item {
 	text-align: center;
 	width: 50%;
+	margin: 0;
 
 	&:first-child {
 		border-right: 1px solid #e8eaf3;
@@ -2252,6 +2281,7 @@ button.header-btn {
 
 	&__address-link {
 		line-height: 26px;
+		font-style: normal;
 	}
 
 	&__phone,
@@ -2472,7 +2502,23 @@ button.header-btn {
 }
 
 /* Footer End */
+/* Popup Start */
+#modal,
+#modal-register {
+	background-color: #eef1f3;
+	max-width: 700px;
+	width: 100%;
+	padding: 50px 0;
+	display: none;
+	.login__head-subtitle{
+		padding: 0px 20px;
+	}
+}
+.fancybox-button svg path {
+	color: $text-accent;
+}
 
+/* Popup end */
 /* Index html end */
 
 /* Category page Start */
@@ -2911,7 +2957,7 @@ button.header-btn {
 		min-height: 160px;
 	}
 
-	.product-image .hover-links .hover__link {
+	.hover-links .hover__link {
 		padding: 10px 14px;
 	}
 
@@ -3006,8 +3052,7 @@ button.header-btn {
 
 		.category-page {
 			&__product-image {
-				max-width: 230px;
-				width: 100%;
+				width: 230px;
 				height: 210px;
 			}
 
@@ -3388,7 +3433,9 @@ button.header-btn {
 
 /* Error page End */
 /* welcome/Login page Start */
-.welcome {
+.welcome,
+#modal,
+#modal-register{
 	.login__head {
 		text-align: center;
 		border-bottom: 1px solid #e8ebf0;
@@ -4775,6 +4822,10 @@ button.header-btn {
 		}
 
 	}
+}
+#modal .login__inner,
+#modal-register .login__inner {
+	 padding: 20px 0;
 }
 
 /* Single section End */
