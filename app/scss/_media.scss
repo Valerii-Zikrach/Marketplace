@@ -62,10 +62,14 @@
 			padding: 0px 3px 0px 7px;
 			max-width: 160px;
 		}
-		.item-description__info--bottom{
+
+		.item-description__info--bottom {
+			min-width: 80px;
 			max-width: 85px;
 		}
-		.btn--gray, .btn--blue {
+
+		.btn--gray,
+		.btn--blue {
 			border: none;
 			font-size: 15px;
 			padding: 5px 5px;
@@ -212,6 +216,7 @@
 			flex-basis: calc(50% - 30px);
 		}
 	}
+
 	.category-filter .category-filter__items-filter {
 		display: none;
 	}
@@ -222,6 +227,10 @@
 		padding: 50px 0;
 
 		&.step--gray {
+			.step__info {
+				padding-left: 0px;
+			}
+
 			.step__img {
 				order: -1;
 			}
@@ -280,6 +289,12 @@
 }
 
 @media(max-width:900px) {
+	.favourites {
+		.category-filter__inner .category-filter__items-filter {
+			margin-left: 0px;
+		}
+	}
+
 	.header__menu-item+.header__menu-item {
 		margin-left: 15px;
 	}
@@ -474,9 +489,10 @@
 	.user-btn {
 		display: none;
 	}
+
 	.user-btn--become,
 	.user-btn--register,
-	.user-btn--login{
+	.user-btn--login {
 		display: block;
 	}
 
@@ -513,6 +529,10 @@
 	.pages-menu__list {
 		margin-top: 0px;
 		display: none;
+	}
+
+	.pages-menu__list--cols {
+		column-count: 1;
 	}
 
 	.pages-menu__list:first-child {
@@ -575,6 +595,9 @@
 
 	.single__item-tabs .tab+.tab {
 		border-left: none;
+	}
+
+	.single__item-tabs .tab.active {
 		border-bottom: 1px solid #e8e8e8;
 	}
 
@@ -742,6 +765,10 @@
 			padding-left: 10px;
 		}
 	}
+
+	.footer-item.footer-item--links.footer-item--links-help {
+		margin-left: 0px;
+	}
 }
 
 @media(max-width:650px) {
@@ -776,9 +803,9 @@
 	.footer-item {
 		margin-right: 0;
 
-		&__phone,
-		&__mail,
-		&__address-link {
+		&__link--phone,
+		&__link--mail,
+		&__link--address {
 			text-align: left;
 
 			&:before {
@@ -896,7 +923,7 @@
 			margin-bottom: 30px;
 		}
 
-		.tagline__link {
+		.tagline-link {
 			padding: 9px 15px;
 			margin: 10px;
 			font-size: 15px;
@@ -920,8 +947,15 @@
 			margin: 0px;
 		}
 	}
-	.user-btn--become{
+
+	.user-btn--become {
 		display: none;
+	}
+
+	.single__item-link {
+		&:first-child {
+			margin-bottom: 15px;
+		}
 	}
 }
 
@@ -988,7 +1022,7 @@
 		padding: 40px 0px 40px;
 	}
 
-	 .login__inner {
+	.login__inner {
 		padding: 20px 0;
 
 		.login__head-title,
@@ -1374,9 +1408,9 @@
 
 	.footer-item {
 
-		&__phone,
-		&__mail,
-		&__address-link {
+		&__link--phone,
+		&__link--mail,
+		&__link--address {
 			margin-left: 15px;
 		}
 	}
@@ -1655,7 +1689,7 @@
 			margin-bottom: 20px;
 		}
 
-		.tagline__link {
+		.tagline-link {
 			display: inline-block;
 			padding: 10px 10px;
 			margin: 5px;
@@ -1698,12 +1732,17 @@
 			margin-bottom: 2px;
 		}
 	}
+
 	.user-btn--register,
-	.user-btn--login{
+	.user-btn--login {
 		text-align: center;
 		margin-left: 10px;
 		width: 60px;
 		padding: 0px;
+	}
+
+	.single__item-links {
+		margin: 0px;
 	}
 }
 

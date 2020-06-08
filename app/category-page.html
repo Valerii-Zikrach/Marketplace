@@ -594,18 +594,14 @@
 			<section class="category-filter">
 				<div class="container">
 					<div class="category-filter__inner">
-						<ul class="category-filter__breadcrumbs-list breadcrumbs__list">
-							<li class="category-filter__breadcrumbs-item breadcrumbs__item">
-								<a href="#" class="category-filter__breadcrumbs-link breadcrumbs__link">
-									Home
-								</a>
-							</li>
-							<li class="category-filter__breadcrumbs-item breadcrumbs__item">
-								<span class="category-filter__breadcrumbs-link breadcrumbs__link">
-									Popular Products
-								</span>
-							</li>
-						</ul>
+						<div class="category-filters">
+							<button type="button" class="category-filters__link btn" data-filter=".category-a">
+								New Products
+							</button>
+							<button type="button" class="category-filters__link btn" data-filter=".category-e">
+								Popular Products
+							</button>
+						</div>
 						<form class="category-filter__form">
 							<div class="category-filter__form-select form-select__price">
 								<label for="sort-select">Price :</label>
@@ -697,7 +693,7 @@
 								</div>
 							</div>
 							<div class="aside-element aside-element__price-range">
-								<div class="aside-element__title">Price Range</div>
+								<div class="aside-element__title">Pricing Range</div>
 								<form class="aside-element__form">
 									<input type="text" class="js-range-slider aside-element__form-input" name="my_range"
 										value="" />
@@ -1324,10 +1320,10 @@
 							Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis,
 							leo quam.
 						</p>
-						<a class="footer-item__phone" href="tel:67898752235">Phone: +6789-875-2235</a>
-						<a class="footer-item__mail" href="mailto:support@aazztech.com">support@aazztech.com</a>
+						<a class="footer-item__link footer-item__link--phone" href="tel:67898752235">Phone: +6789-875-2235</a>
+						<a class="footer-item__link footer-item__link--mail" href="mailto:support@aazztech.com">support@aazztech.com</a>
 						<address class="footer-item__address">
-							<a href="#" class="footer-item__address-link">
+							<a href="#" class="footer-item__link footer-item__link--address">
 								202 New Hampshire Avenue Northwest #100, New York-2573
 							</a>
 						</address>
@@ -1372,7 +1368,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="footer-item footer-item--links">
+					<div class="footer-item footer-item--links footer-item--links-help">
 						<div class="footer-item__title">Help Support</div>
 						<ul class="footer-item__list">
 							<li class="footer-item__element">
@@ -1422,7 +1418,7 @@
 								required>
 							<button class="footer-item__form-btn form-template__btn" type="submit">Submit</button>
 						</form>
-						<ul class="footer-item__social-list">
+						<ul class="footer-item__social-list social-list">
 							<li class="footer-item__social-element">
 								<a href="#" class="footer-item__social-link footer-item__social-link--facebook">
 									facebook icon
